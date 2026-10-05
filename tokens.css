@@ -1,0 +1,49 @@
+:root {
+    /* Cores */
+    --cor-fundo: #f3ead8;
+    --cor-superficie: #fffaf0;
+    --cor-texto: #2f241b;
+    --cor-texto-suave: #66584b;
+    --cor-marca: #7a3e00;
+    --cor-sobre-marca: #fffaf0;
+    --cor-borda: #b9a48c;
+
+    /*
+    Contrastes mínimos esperados:
+    --cor-texto sobre --cor-fundo: contraste alto
+    --cor-texto-suave sobre --cor-fundo: contraste alto
+    --cor-marca sobre --cor-fundo: contraste alto
+    --cor-sobre-marca sobre --cor-marca: contraste alto
+    --cor-texto sobre --cor-superficie: contraste alto
+    */
+
+    /* Fontes */
+    --fonte-texto: system-ui, sans-serif;
+    --fonte-titulo: "Kablammo", sans-serif;
+
+    /* Tamanho do texto */
+    --tamanho-texto: 1rem;
+
+    /*
+    Multiplicador da escala modular: 1.25
+
+    1rem × 1.25 = 1.25rem
+    1.25rem × 1.25 = 1.563rem
+    1.563rem × 1.25 = 1.954rem
+    */
+    --tamanho-h3: 1.25rem;
+    --tamanho-h2: 1.563rem;
+    --tamanho-h1: 1.954rem;
+
+    /* Espaçamentos */
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 2.5rem;
+
+    /* Forma */
+    --raio: 8px;
+
+    /* Sombra */
+    --sombra: 0 4px 12px rgb(0 0 0 / 0.12);
+}

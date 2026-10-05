@@ -1,0 +1,53 @@
+/* Caso 1 */
+
+/*
+Previsão:
+A regra .aviso strong vence a regra strong porque é mais específica.
+A especificidade de .aviso strong é (0, 1, 1), enquanto strong é (0, 0, 1).
+Portanto, a parte importante do aviso deve ficar com a cor da marca.
+*/
+
+.aviso strong {
+    color: var(--cor-marca);
+}
+
+strong {
+    color: var(--cor-texto-suave);
+}
+
+
+/* Caso 2 */
+
+/*
+Previsão:
+A regra .busca label e a regra label[for] têm a mesma especificidade:
+(0, 1, 1).
+Como label[for] aparece depois, ela vence pela ordem da cascata.
+Portanto, o rótulo "Procurar produto" deve ficar com a cor do texto suave.
+*/
+
+.busca label {
+    color: var(--cor-marca);
+}
+
+label[for] {
+    color: var(--cor-texto-suave);
+}
+
+
+/* Caso 3 */
+
+/*
+Previsão:
+A regra footer p define diretamente a cor do parágrafo do rodapé.
+A regra .rodape-site define a cor do elemento pai, que seria herdada.
+Por isso, footer p deve prevalecer para o parágrafo.
+*/
+
+.rodape-site {
+    color: var(--cor-marca);
+}
+
+footer p {
+    color: var(--cor-texto);
+}
