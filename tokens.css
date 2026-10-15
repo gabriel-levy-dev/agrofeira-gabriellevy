@@ -53,4 +53,22 @@
 --cor-foco: #005fcc;
 --cor-foco-sobre-marca: #ffffff;
 
+/* Passo 10 — Tema escuro: tokens */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --cor-fundo: #121a14;
+        --cor-texto: #f3f7f3;
+        --cor-superficie: #1d2920;
+        --cor-marca: #285b35;
+        --cor-sobre-marca: #ffffff;
+        --cor-borda: #637268;
+        --cor-texto-suave: #c2cec4;
+        --cor-marca-forte: #174326;
+        --cor-foco: #75baff;
+        --cor-foco-sobre-marca: #ffffff;
+    }
+}
+
 }
