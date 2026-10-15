@@ -560,3 +560,20 @@ input[type="submit"]:hover {
     outline: 3px solid var(--cor-foco);
     outline-offset: 3px;
 }
+/* Passo 9 — Link para pular direto ao conteúdo */
+.pular {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    padding: var(--espaco-2);
+}
+
+.pular:focus-visible {
+    left: var(--espaco-2);
+    top: var(--espaco-2);
+    outline: 3px solid var(--cor-foco-sobre-marca);
+    outline-offset: 3px;
+}
