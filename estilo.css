@@ -542,3 +542,15 @@ aside .lista-produtos {
         align-self: end;
     }
 }
+
+/* Passo 7 — Estados de hover e foco visível */
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--cor-marca-forte);
+    border-color: var(--cor-marca-forte);
+}
+
+:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+}

@@ -46,4 +46,10 @@
 
     /* Sombra */
     --sombra: 0 4px 12px rgb(0 0 0 / 0.12);
+
+    
+/* Cores novas do Passo 7 — medir e anotar o contraste */
+--cor-marca-forte: #633000;
+--cor-foco: #005fcc;
+
 }
