@@ -554,3 +554,9 @@ input[type="submit"]:hover {
     outline: 3px solid var(--cor-foco);
     outline-offset: 3px;
 }
+
+/* Passo 8 — O cartão destaca quando um elemento interno recebe foco */
+.cartao-produto:has(:focus-visible) {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+}
