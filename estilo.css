@@ -365,3 +365,13 @@ blockquote {
 .rodape-site p {
     margin-bottom: 0;
 }
+
+/* Barra de categorias do catálogo */
+.barra-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-2);
+    list-style: none;
+    padding: 0;
+    margin: var(--espaco-2) 0 var(--espaco-3);
+}
