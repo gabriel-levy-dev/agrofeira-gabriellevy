@@ -473,3 +473,72 @@ aside .lista-produtos {
             "rodape rodape rodape";
     }
 }
+
+
+/* Passo 6 — O cartão se adapta ao espaço disponível */
+.cartao-produto {
+    container-type: inline-size;
+}
+
+.cartao-produto article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-2);
+}
+
+.cartao-produto article img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+}
+
+.cartao-produto article h3,
+.cartao-produto article p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Container query — no cartão com espaço suficiente, coloca a foto à esquerda e o texto e botão à direita. */
+@container (min-width: 38rem) {
+    .cartao-produto article {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: auto auto auto 1fr;
+        column-gap: var(--espaco-3);
+        align-items: start;
+    }
+
+    .cartao-produto article img {
+        grid-column: 1;
+        grid-row: 1 / 5;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cartao-produto article h3,
+    .cartao-produto article p,
+    .cartao-produto article button {
+        grid-column: 2;
+    }
+
+    .cartao-produto article h3 {
+        grid-row: 1;
+    }
+
+    .cartao-produto article .produtor {
+        grid-row: 2;
+    }
+
+    .cartao-produto article .preco {
+        grid-row: 3;
+    }
+
+    .cartao-produto article button {
+        grid-row: 4;
+        justify-self: start;
+        align-self: end;
+    }
+}
