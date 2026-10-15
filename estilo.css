@@ -375,3 +375,53 @@ blockquote {
     padding: 0;
     margin: var(--espaco-2) 0 var(--espaco-3);
 }
+
+/* ==========================================================
+   CATÁLOGO — GRADE DE PRODUTOS
+   ========================================================== */
+
+/* A grade principal se ajusta ao espaço disponível. */
+main .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: var(--espaco-2);
+    list-style: none;
+    padding: 0;
+    margin: var(--espaco-2) 0;
+}
+
+/* O produto em destaque ocupa a linha inteira. */
+main .lista-produtos .destaque {
+    grid-column: 1 / -1;
+}
+
+/* Os cartões ocupam a largura da coluna da grade. */
+.lista-produtos .cartao-produto {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin-bottom: 0;
+}
+
+/* As imagens se ajustam ao cartão. */
+.cartao-produto img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+}
+
+/* Informações dos produtores em texto suave. */
+.cartao-produto .produtor {
+    color: var(--cor-texto-suave);
+}
+
+/* Preço em destaque. */
+.cartao-produto .preco {
+    font-weight: 700;
+}
+
+/* A lateral mantém uma coluna de produtos. */
+aside .lista-produtos {
+    grid-template-columns: 1fr;
+}
